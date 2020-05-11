@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/tennis.iml" filepath="$PROJECT_DIR$/tennis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tennis.main.iml" filepath="$PROJECT_DIR$/.idea/modules/tennis.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tennis.test.iml" filepath="$PROJECT_DIR$/.idea/modules/tennis.test.iml" />
+    </modules>
+  </component>
+</project>
