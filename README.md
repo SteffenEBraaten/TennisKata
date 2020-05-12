@@ -6,7 +6,7 @@ You can find the original description of the tennis kata here: http://codingdojo
 ### Description of the tennis kata
 This Kata is about implementing a tennis game against one opponent.
 
-#### Scoreing system
+#### Scoring system
 - Each player can have either of these points in one game: "0, 15, 30, 40". 
 
 #### Win
