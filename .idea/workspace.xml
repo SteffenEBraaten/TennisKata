@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608d3c33-a6e8-403d-b4f7-a1bcccac9ab7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tennis/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tennis/Game.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/tennis/GameTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tennis/GameTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
