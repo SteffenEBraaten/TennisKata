@@ -35,22 +35,14 @@ class GameTest {
             game.increaseScore(player2)
         }
         Assert.assertEquals(true, game.isDeuce(player1.score, player2.score))
-
-        for(i in 0..20) {
-            game.increaseScore(player1)
-            game.increaseScore(player2)
-        }
-        Assert.assertEquals(true, game.isDeuce(player1.score, player2.score))
     }
 
     @Test
     fun `It should result in a invalid deuce`() {
         Assert.assertNotEquals(true, game.isDeuce(player1.score, player2.score))
 
-        for(i in 0..2) {
-            game.increaseScore(player1)
-            game.increaseScore(player2)
-        }
+        createScores(2, 2)
+
         Assert.assertNotEquals(true, game.isDeuce(player1.score, player2.score))
 
         game.increaseScore(player1)
@@ -59,90 +51,73 @@ class GameTest {
 
     @Test
     fun `It should result in a advantage`() {
-        for(i in 0..4) {
-            game.increaseScore(player1)
-        }
+        createScores(4, 3)
 
-        for(i in 0..3) {
-            game.increaseScore(player2)
-        }
         Assert.assertEquals(true, game.hasAdvantage(player1.score, player2.score))
     }
 
     @Test
     fun `Highest score testing`() {
-        for(i in 0..3) {
-            game.increaseScore(player1)
-        }
-        for(i in 0..2) {
-            game.increaseScore(player2)
-        }
+        createScores(3, 2)
 
         Assert.assertEquals(player1, game.getPlayerHighestScore())
     }
 
     @Test
     fun `It should be a winner when the player1 wins at advantage`() {
-        for (i in 0..5) {
-            game.increaseScore(player1)
-        }
-        for (i in 0..3) {
-            game.increaseScore(player2)
-        }
+        createScores(5, 3)
+
         Assert.assertEquals(true, game.hasWinner(player1.score, player2.score))
     }
 
     @Test
-    fun `It should convert the score into a string version of the tennis score system`() {
+    fun `It should convert the score into "0" when given a score of 0`() {
         Assert.assertEquals("0", game.convertScore(player1.score))
+    }
 
+    @Test
+    fun `It should convert the score into "15" when given a score of 1`() {
         game.increaseScore(player1)
         Assert.assertEquals("15", game.convertScore(player1.score))
+    }
 
-        game.increaseScore(player1)
+    @Test
+    fun `It should convert the score into "30" when given a score of 2`() {
+        createScores(1, 0)
         Assert.assertEquals("30", game.convertScore(player1.score))
+    }
 
-        game.increaseScore(player1)
+    @Test
+    fun `It should convert the score into "40" when given a score of 3`() {
+        createScores(2, 0)
         Assert.assertEquals("40", game.convertScore(player1.score))
     }
 
     @Test (expected = RuntimeException::class)
     fun `It should result in a RuntimeException when trying to get convert a score over 3`() {
-        for (i in 0..3) {
-            game.increaseScore(player1)
-        }
+        createScores(3, 0)
+
         game.convertScore(player1.score)
     }
 
     @Test
     fun `It should result in a win for Player1`() {
-        for (i in 0..3) {
-            game.increaseScore(player1)
-        }
-        for (i in 0..1) {
-            game.increaseScore(player2)
-        }
+        createScores(3, 1)
+
         Assert.assertEquals("${player1.playerName} won the game!", game.getScore())
     }
 
     @Test
     fun `It should result in a advantage for Player1`() {
-        for(i in 0..5) {
-            game.increaseScore(player1)
-        }
+        createScores(5, 4)
 
-        for(i in 0..4) {
-            game.increaseScore(player2)
-        }
         Assert.assertEquals("${player1.playerName} has the advantage.", game.getScore())
     }
 
     @Test
     fun `It should be a deuce`() {
-        for(i in 0..4) {
-            game.increaseScore(player1)
-            game.increaseScore(player2)
-        }
+        createScores(3, 3)
+
         Assert.assertEquals("Deuce", game.getScore())
     }
 
@@ -154,13 +129,20 @@ class GameTest {
 
     @Test
     fun `It should reset the players scores to 0`() {
-        for(i in 0..5) {
-            game.increaseScore(player1)
-            game.increaseScore(player2)
-        }
+        createScores(5, 5)
         game.resetPlayersScore()
 
         Assert.assertEquals(0, player1.score)
         Assert.assertEquals(0, player2.score)
+    }
+
+    // Helper function to createScores
+    private fun createScores(scorePlayer1 : Int, scorePlayer2: Int) {
+        for (i in 0..scorePlayer1) {
+            game.increaseScore(player1)
+        }
+        for (i in 0..scorePlayer2) {
+            game.increaseScore(player2)
+        }
     }
 }

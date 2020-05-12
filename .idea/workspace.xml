@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="608d3c33-a6e8-403d-b4f7-a1bcccac9ab7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/tennis.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/tennis.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tennis/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tennis/Game.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tennis/AppTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tennis/GameTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/tennis/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/tennis/Game.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tennis/GameTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tennis/GameTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,26 +66,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.GameTest">
-    <configuration name="AppTest.testAppHasAGreeting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;test.kotlin.tennis.AppTest.testAppHasAGreeting&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="GameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,6 +82,26 @@
           </list>
         </option>
         <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameTest.It should reset the players scores to 0" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;tennis.GameTest.It should reset the players scores to 0&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
@@ -150,7 +146,7 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="tennis.GameKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="tennis.GameKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="tennis.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -165,18 +161,18 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.GameTest" />
-      <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
       <item itemvalue="Gradle.GameTest.increaseScore" />
       <item itemvalue="Gradle.GameTest.testAppHasAGreeting" />
       <item itemvalue="Kotlin.tennis.GameKt" />
+      <item itemvalue="Gradle.GameTest.It should reset the players scores to 0" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GameTest" />
+        <item itemvalue="Gradle.GameTest.It should reset the players scores to 0" />
         <item itemvalue="Kotlin.tennis.GameKt" />
         <item itemvalue="Gradle.GameTest.increaseScore" />
         <item itemvalue="Gradle.GameTest.testAppHasAGreeting" />
-        <item itemvalue="Gradle.AppTest.testAppHasAGreeting" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +194,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
