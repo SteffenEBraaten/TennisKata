@@ -1,5 +1,5 @@
-#Tennis
-____
+# Tennis
+___
 The tennis kata implemented in Kotlin with Junit.
 You can find the original description of the tennis kata here: http://codingdojo.org/kata/Tennis/
 
