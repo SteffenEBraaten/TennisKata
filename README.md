@@ -15,3 +15,9 @@ The player who has 40 and wins the ball is declared the winner, but there are sp
 - If the game is in deuce, the winner of a ball will have advantage and game ball. 
 - If the player with advantage wins the ball he wins the game 
 - If the player without advantage wins they are back at deuce.
+
+## Running the tests
+To run the tests simply write the following
+```bash 
+gradle test
+```
